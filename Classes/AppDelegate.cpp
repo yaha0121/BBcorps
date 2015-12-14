@@ -1,5 +1,8 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "cocos2d.h"
+#include "GameManager.h"
+
 
 USING_NS_CC;
 
@@ -8,12 +11,20 @@ static cocos2d::Size smallResolutionSize = cocos2d::Size(480, 320);
 static cocos2d::Size mediumResolutionSize = cocos2d::Size(1024, 768);
 static cocos2d::Size largeResolutionSize = cocos2d::Size(2048, 1536);
 
-AppDelegate::AppDelegate() {
+static cocos2d::Size defaultResolutionSize = cocos2d::Size(960,640);
 
+AppDelegate::AppDelegate()
+{
+    m_pGameManager = NULL;
 }
 
 AppDelegate::~AppDelegate() 
 {
+    if (m_pGameManager != NULL)
+    {
+        delete m_pGameManager;
+        m_pGameManager = NULL;
+    }
 }
 
 //if you want a different context,just modify the value of glContextAttrs
@@ -54,7 +65,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setAnimationInterval(1.0 / 60);
 
     // Set the design resolution
-    glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::NO_BORDER);
+    //glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::NO_BORDER);
+    
+    //因为资源的关系 修改design resolution 的配置
+    glview->setDesignResolutionSize(defaultResolutionSize.width, defaultResolutionSize.height, ResolutionPolicy::NO_BORDER);
+    
     Size frameSize = glview->getFrameSize();
     // if the frame's height is larger than the height of medium size.
     if (frameSize.height > mediumResolutionSize.height)
@@ -75,10 +90,18 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
+    //auto scene = HelloWorld::createScene();
+    
+    //director->setContentScaleFactor(1);
 
     // run
-    director->runWithScene(scene);
+    //director->runWithScene(scene);
+    
+    if (m_pGameManager == NULL)
+    {
+        m_pGameManager = new CGameManager;
+    }
+    m_pGameManager->Run();
 
     return true;
 }

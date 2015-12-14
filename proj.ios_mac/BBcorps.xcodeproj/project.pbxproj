@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18BCD40D1C1570C4002B835F /* GameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18BCD40B1C1570C4002B835F /* GameManager.cpp */; };
+		18BCD4101C15742E002B835F /* UIHello.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18BCD40E1C15742E002B835F /* UIHello.cpp */; };
+		18BCD4131C157E75002B835F /* UILogin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18BCD4111C157E75002B835F /* UILogin.cpp */; };
+		18BCD4161C167303002B835F /* UIMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18BCD4141C167303002B835F /* UIMain.cpp */; };
+		18BCD41B1C16CC35002B835F /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BCD41A1C16CC34002B835F /* libiconv.2.dylib */; };
+		18BCD41D1C16CC53002B835F /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BCD41C1C16CC53002B835F /* libiconv.dylib */; };
+		18DE97FD1C0450CE001D4F2D /* CResource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18DE97FB1C0450CE001D4F2D /* CResource.cpp */; };
+		18DE980B1C0454F3001D4F2D /* Armature in Resources */ = {isa = PBXBuildFile; fileRef = 18DE98091C0454F3001D4F2D /* Armature */; };
+		18DE980C1C0454F3001D4F2D /* iphone in Resources */ = {isa = PBXBuildFile; fileRef = 18DE980A1C0454F3001D4F2D /* iphone */; };
+		18DE98181C0EF197001D4F2D /* VisibleRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18DE98161C0EF197001D4F2D /* VisibleRect.cpp */; };
 		1AC6FB21180E996B004C840B /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */; };
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -103,6 +113,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18BCD40B1C1570C4002B835F /* GameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameManager.cpp; sourceTree = "<group>"; };
+		18BCD40C1C1570C4002B835F /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
+		18BCD40E1C15742E002B835F /* UIHello.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIHello.cpp; sourceTree = "<group>"; };
+		18BCD40F1C15742E002B835F /* UIHello.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIHello.h; sourceTree = "<group>"; };
+		18BCD4111C157E75002B835F /* UILogin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UILogin.cpp; sourceTree = "<group>"; };
+		18BCD4121C157E75002B835F /* UILogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILogin.h; sourceTree = "<group>"; };
+		18BCD4141C167303002B835F /* UIMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIMain.cpp; sourceTree = "<group>"; };
+		18BCD4151C167303002B835F /* UIMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMain.h; sourceTree = "<group>"; };
+		18BCD4181C16C484002B835F /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		18BCD41A1C16CC34002B835F /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/usr/lib/libiconv.2.dylib; sourceTree = DEVELOPER_DIR; };
+		18BCD41C1C16CC53002B835F /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
+		18DE97FB1C0450CE001D4F2D /* CResource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CResource.cpp; sourceTree = "<group>"; };
+		18DE97FC1C0450CE001D4F2D /* CResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CResource.h; sourceTree = "<group>"; };
+		18DE98091C0454F3001D4F2D /* Armature */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Armature; sourceTree = "<group>"; };
+		18DE980A1C0454F3001D4F2D /* iphone */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iphone; sourceTree = "<group>"; };
+		18DE98161C0EF197001D4F2D /* VisibleRect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VisibleRect.cpp; sourceTree = "<group>"; };
+		18DE98171C0EF197001D4F2D /* VisibleRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisibleRect.h; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -170,6 +197,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BCD41D1C16CC53002B835F /* libiconv.dylib in Frameworks */,
+				18BCD41B1C16CC35002B835F /* libiconv.2.dylib in Frameworks */,
 				ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */,
 				52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */,
 				1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */,
@@ -258,6 +287,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18BCD41C1C16CC53002B835F /* libiconv.dylib */,
+				18BCD41A1C16CC34002B835F /* libiconv.2.dylib */,
 				ED545A7D1B68A1FA00C3958E /* libiconv.dylib */,
 				ED545A7B1B68A1F400C3958E /* libiconv.dylib */,
 				8262943D1AAF051F00CB7CF7 /* Security.framework */,
@@ -284,6 +315,8 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				18DE98091C0454F3001D4F2D /* Armature */,
+				18DE980A1C0454F3001D4F2D /* iphone */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
 				46880B7619C43A67006E1F66 /* CloseNormal.png */,
@@ -297,10 +330,23 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18BCD4181C16C484002B835F /* Defines.h */,
+				18DE98161C0EF197001D4F2D /* VisibleRect.cpp */,
+				18DE98171C0EF197001D4F2D /* VisibleRect.h */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
 				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
+				18DE97FB1C0450CE001D4F2D /* CResource.cpp */,
+				18DE97FC1C0450CE001D4F2D /* CResource.h */,
+				18BCD40B1C1570C4002B835F /* GameManager.cpp */,
+				18BCD40C1C1570C4002B835F /* GameManager.h */,
+				18BCD40E1C15742E002B835F /* UIHello.cpp */,
+				18BCD40F1C15742E002B835F /* UIHello.h */,
+				18BCD4111C157E75002B835F /* UILogin.cpp */,
+				18BCD4121C157E75002B835F /* UILogin.h */,
+				18BCD4141C167303002B835F /* UIMain.cpp */,
+				18BCD4151C167303002B835F /* UIMain.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -458,6 +504,7 @@
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
+				18DE980C1C0454F3001D4F2D /* iphone in Resources */,
 				521A8EA919F11F5000D177D7 /* fonts in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
@@ -465,6 +512,7 @@
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
+				18DE980B1C0454F3001D4F2D /* Armature in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
@@ -497,7 +545,13 @@
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				18BCD4161C167303002B835F /* UIMain.cpp in Sources */,
+				18BCD4131C157E75002B835F /* UILogin.cpp in Sources */,
+				18DE97FD1C0450CE001D4F2D /* CResource.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				18BCD40D1C1570C4002B835F /* GameManager.cpp in Sources */,
+				18BCD4101C15742E002B835F /* UIHello.cpp in Sources */,
+				18DE98181C0EF197001D4F2D /* VisibleRect.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,7 +612,7 @@
 					"$(_COCOS_LIB_IOS_END)",
 				);
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
 				VALID_ARCHS = "arm64 armv7";
 			};
@@ -592,7 +646,7 @@
 					"$(_COCOS_LIB_IOS_END)",
 				);
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
 				VALID_ARCHS = "arm64 armv7";
 			};
